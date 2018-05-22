@@ -1,0 +1,68 @@
+# Site settings
+title:       Alter Blog
+SEOTitle:    Alter Blog
+header-img:  img/home-bg.webp
+email:       i@gvip.xyz
+description: "这里是小忍Lily的个人博客"
+baseurl:     ""          # for example, '/blog' if your blog hosted on 'host/blog'
+imgcdn_url:  "//img.gvip.xyz"
+
+
+
+# Sidebar settings
+sidebar: true                           # whether or not using Sidebar.
+#sidebar-about-description: "何必较真"
+sidebar-avatar: /img/avatar.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+
+#SNS settings
+#RSS: true
+#weibo_username:     zegzhi
+zhihu_username: zegzhi
+github_username: zegzhi
+#twitter_username:  Zegzhi
+#facebook_username:  Zegzhi
+
+# Featured Tags
+featured-tags: true                     # whether or not using Feature-Tags
+featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
+
+# Friends
+friends: [
+    {
+        title: "廖雪峰的官方网站",
+        href: "http://www.liaoxuefeng.com/"
+    },{
+        title: "Hux Blog",
+        href: "http://huangxuan.me/"
+    },{
+        title: "w3school",
+        href: "http://www.w3school.com.cn/"
+    }
+]
+
+# Disqus settings
+#disqus_username: _your_disqus_short_name_
+
+# Build settings
+# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
+highlighter: rouge
+markdown: kramdown
+permalink: pretty
+paginate: 10
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+anchorjs: true  # if you want to customize anchor. check out line:181 of `post.html`
+
+timezone: Asia/Shanghai
+permalink: /:year/:month/:day/:title/
+
+kramdown:
+  math_engine: mathjax
+  syntax_highlighter: rouge
+  auto_ids:       true
+  entity_output:  as_char
+  toc_levels:     1..6
+  smart_quotes:   lsquo,rsquo,ldquo,rdquo
+  input:          GFM
+  hard_wrap:      false
+  footnote_nr:    1
+  show_warnings:  false

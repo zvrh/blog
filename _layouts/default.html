@@ -1,0 +1,19 @@
+{%- capture html -%}
+<!DOCTYPE html>
+<html lang="zh-CN">
+{% include head.html %}
+<body>
+    {% include nav.html %}
+    {{ content }}
+    {% include footer.html %}
+</body>
+</html>
+{%- endcapture -%}
+{%- assign header_cdnstr = 'background-image: url(' | append: site.imgcdn_url | append: '/' -%}
+{%- assign img_cdnstr =  '="' | append: site.imgcdn_url | append: '/img/' -%}
+
+{{ 
+    html
+    | replace: 'background-image: url(/',    header_cdnstr
+    | replace: '="/img/',                    img_cdnstr
+}}
