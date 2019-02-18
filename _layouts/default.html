@@ -11,15 +11,15 @@
 {%- endcapture -%}
 {%- assign header_cdnstr = 'background-image: url(' | append: site.imgcdn_url | append: '/' -%}
 {%- assign img_cdnstr =  '="' | append: site.imgcdn_url | append: '/img/' -%}
-{%- assign js_cdnstr = '="' | append: site.cdn_url | append: '/js/' -%}
-{%- assign css_cdnstr = '="' | append: site.cdn_url | append: '/css/' -%}
-{%- assign fonts_cdnstr = '="' | append: site.cdn_url | append: '/fonts/' -%}
+{%- assign js_cdnstr = '"' | append: site.cdn_url | append: '/js/' -%}
+{%- assign css_cdnstr = '"' | append: site.cdn_url | append: '/css/' -%}
+{%- assign fonts_cdnstr = '"' | append: site.cdn_url | append: '/fonts/' -%}
 
 {{ 
     html
     | replace: 'background-image: url(/',    header_cdnstr
-    | replace: '="/img/',                    img_cdnstr
-    | replace: '="/js/',                     js_cdnstr
-    | replace: '="/css/',                    css_cdnstr
-    | replace: '="/fonts/',                  fonts_cdnstr
+    | replace: '"/img/',                     img_cdnstr
+    | replace: '"/js/',                      js_cdnstr
+    | replace: '"/css/',                     css_cdnstr
+    | replace: '"/fonts/',                   fonts_cdnstr
 }}
