@@ -5,8 +5,8 @@ header-img:  img/home-bg.webp
 email:       i@gvip.xyz
 description: "这里是小忍Lily的个人博客"
 baseurl:     ""          # for example, '/blog' if your blog hosted on 'host/blog'
-cdn_url:     "//cdn.gvip.xyz"
-imgcdn_url:  "//img.gvip.xyz"
+cdn_url:     ""          # '//cdn.xxx.com'
+imgcdn_url:  ""
 
 
 
