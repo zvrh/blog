@@ -1,9 +1,6 @@
 _site
 node_modules
-img
 .DS_Store
-*/.DS_Store
-*/*/.DS_Store
 *.sh
 Gemfile.lock
 _posts/.markdownlint.json
